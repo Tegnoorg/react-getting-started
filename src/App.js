@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  // State variables
   const [showAddDialog, setShowAddDialog] = useState(false);
   const [showRecipeDialog, setShowRecipeDialog] = useState(false);
   const [recipes, setRecipes] = useState(JSON.parse(localStorage.getItem('recipes')) || []);
