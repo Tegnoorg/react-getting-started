@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
@@ -62,9 +62,12 @@ function App() {
     setDirection('');
   };
 
+  useEffect(() => {
+    localStorage.setItem('recipes', JSON.stringify(recipes));
+  }, [recipes]);
+
   return (
     <div className='main_div'>
-      <button className ="localStorageClear" onClick={localStorage.clear()}> ↻ </button>
       <div className='center_div'>
         <br />
         <button onClick={handleAddButtonClick}> + </button>

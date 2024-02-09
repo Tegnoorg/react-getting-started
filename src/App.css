@@ -184,8 +184,3 @@ button:hover{
   background-color: #4bb4de; 
 }
 
-.localStorageClear {
-  position: absolute;
-  left:10px;
-  top :10px;
-}
